@@ -1,0 +1,312 @@
+import { StyleSheet, Dimensions } from 'react-native';
+import { colors } from '@/src/theme/colors';
+
+const { width } = Dimensions.get('window');
+const PAD = 20;
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: colors.background,
+  },
+  centralizado: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  scrollContent: {
+    paddingHorizontal: PAD,
+    paddingTop: 20,
+    paddingBottom: 40,
+  },
+
+  inputWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#1A1A1A',
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#252525',
+    paddingHorizontal: 12,
+    marginBottom: 16,
+    height: 44,
+  },
+  inputIcon: {
+    marginRight: 8,
+  },
+  inputBusca: {
+    flex: 1,
+    color: colors.text,
+    fontFamily: 'Creato-Regular',
+    fontSize: 14,
+  },
+  areaFiltros: {
+    marginBottom: 20,
+  },
+  scrollFiltros: {
+    gap: 8,
+    paddingRight: 4,
+  },
+  btnFiltro: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 20,
+    backgroundColor: '#1A1A1A',
+    borderWidth: 1,
+    borderColor: '#252525',
+  },
+  btnFiltroAtivo: {
+    backgroundColor: colors.primary,
+    borderColor: colors.primary,
+  },
+  txtFiltro: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text_secondary,
+    fontSize: 13,
+    letterSpacing: 0.5,
+  },
+  txtFiltroAtivo: {
+    color: colors.text,
+  },
+
+  card1: {
+    backgroundColor: '#1A1A1A',
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: '#252525',
+    padding: 22,
+    alignItems: 'center',
+    marginBottom: 12,
+    overflow: 'hidden',
+    position: 'relative',
+  },
+  card1NumFundo: {
+    position: 'absolute',
+    top: 10,
+    right: 14,
+    fontFamily: 'Creato-Bold',
+    fontSize: 56,
+    color: colors.azulClaro + '18',
+    lineHeight: 60,
+  },
+  card1Foto: {
+    width: 100,
+    height: 100,
+    borderRadius: 100,
+    borderWidth: 3,
+    borderColor: colors.azulClaro,
+    backgroundColor: '#252525',
+    marginBottom: 12,
+  },
+  card1Nome: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text,
+    fontSize: 20,
+    textAlign: 'center',
+    marginBottom: 2,
+  },
+  card1Time: {
+    fontFamily: 'Creato-Regular',
+    color: colors.text_secondary,
+    fontSize: 14,
+    marginBottom: 14,
+  },
+  card1RowValor: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+  },
+  card1Valor: {
+    fontFamily: 'Creato-Bold',
+    color: colors.primary,
+    fontSize: 40,
+    lineHeight: 44,
+  },
+  card1LabelValor: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text_secondary,
+    fontSize: 16,
+    letterSpacing: 1,
+    marginLeft: 4,
+  },
+  card1IconSoccer: {
+    marginTop: 10,
+  },
+
+  cardSec: {
+    backgroundColor: '#1A1A1A',
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: '#252525',
+    padding: 18,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 12,
+    overflow: 'hidden',
+    position: 'relative',
+  },
+  cardSecNumFundo: {
+    position: 'absolute',
+    top: 6,
+    right: 12,
+    fontFamily: 'Creato-Bold',
+    fontSize: 40,
+    color: '#FFFFFF10',
+    lineHeight: 44,
+  },
+  cardSecFoto: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    borderWidth: 2,
+    borderColor: '#333',
+    backgroundColor: '#252525',
+    marginRight: 16,
+  },
+  cardSecInfo: {
+    flex: 1,
+  },
+  cardSecNome: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text,
+    fontSize: 16,
+    marginBottom: 2,
+  },
+  cardSecTime: {
+    fontFamily: 'Creato-Regular',
+    color: colors.text_secondary,
+    fontSize: 14,
+    marginBottom: 8,
+  },
+  cardSecRowValor: {
+    flexDirection: 'row',
+    alignItems: 'baseline',
+  },
+  cardSecValor: {
+    fontFamily: 'Creato-Bold',
+    color: colors.primary,
+    fontSize: 28,
+  },
+  cardSecLabelValor: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text_secondary,
+    fontSize: 13,
+    letterSpacing: 1,
+    marginLeft: 4,
+  },
+
+  rankingContainer: {
+    backgroundColor: '#1A1A1A',
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: '#252525',
+    overflow: 'hidden',
+    marginBottom: 20,
+  },
+  rankingHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#252525',
+  },
+  rankingTitulo: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text,
+    fontSize: 14,
+    letterSpacing: 1,
+  },
+  rankingAtualizado: {
+    fontFamily: 'Creato-Bold',
+    color: colors.azulClaro,
+    fontSize: 10,
+    letterSpacing: 0.5,
+  },
+  rankingColunas: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 14,
+    borderBottomWidth: 1,
+    borderBottomColor: '#252525',
+  },
+  rankingColTxt: {
+    fontFamily: 'Creato-Bold',
+    color: '#444',
+    fontSize: 12,
+    letterSpacing: 1,
+    textTransform: 'uppercase',
+  },
+  rankingLinha: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#1E1E1E',
+  },
+  rankingPos: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text_secondary,
+    fontSize: 14,
+    width: 32,
+  },
+  rankingFoto: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#252525',
+    marginRight: 12,
+  },
+  rankingInfoJogador: {
+    flex: 1,
+  },
+  rankingNome: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text,
+    fontSize: 16,
+  },
+  rankingTime: {
+    fontFamily: 'Creato-Regular',
+    color: colors.text_secondary,
+    fontSize: 12,
+    marginTop: 1,
+  },
+  rankingValor: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text,
+    fontSize: 18,
+  },
+  btnCarregarMais: {
+    paddingVertical: 14,
+    alignItems: 'center',
+    borderTopWidth: 1,
+    borderTopColor: '#252525',
+  },
+  txtCarregarMais: {
+    fontFamily: 'Creato-Bold',
+    color: colors.azulClaro,
+    fontSize: 12,
+    letterSpacing: 1,
+  },
+  txtCarregando: {
+    fontFamily: 'Creato-Regular',
+    color: colors.text_secondary,
+    marginTop: 10,
+  },
+  txtErro: {
+    fontFamily: 'Creato-Bold',
+    color: colors.vermelho,
+    marginBottom: 12,
+  },
+  btnRetry: {
+    backgroundColor: colors.primary,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 10,
+  },
+  txtBtnRetry: {
+    fontFamily: 'Creato-Bold',
+    color: colors.text,
+  },
+});
