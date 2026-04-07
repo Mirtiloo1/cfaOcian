@@ -1,8 +1,10 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import { colors } from '@/src/theme/colors';
 
-const { width } = Dimensions.get('window');
 const PAD = 20;
+const { width: windowWidth } = Dimensions.get('window');
+const LARGURA_ITEM_SELECTOR = 120;
+const LARGURA_DISPONIVEL = windowWidth - (PAD * 2);
 
 export const styles = StyleSheet.create({
   container: {
@@ -78,6 +80,7 @@ export const styles = StyleSheet.create({
     marginBottom: 12,
     overflow: 'hidden',
     position: 'relative',
+    marginTop: 20,
   },
   card1NumFundo: {
     position: 'absolute',
@@ -309,4 +312,56 @@ export const styles = StyleSheet.create({
     fontFamily: 'Creato-Bold',
     color: colors.text,
   },
+  carrosselWrapper: {
+  alignItems: 'center',
+  paddingHorizontal: PAD,
+  marginTop: 10,
+  paddingBottom: 10,
+},
+carrosselInternal: {
+  flexDirection: 'row',
+  alignItems: 'center',
+  backgroundColor: '#1A1A1A',
+  borderRadius: 12,
+  paddingVertical: 10,
+  paddingHorizontal: 10,
+},
+botaoSeta: {
+  width: 40,
+  height: 40,
+  justifyContent: 'center',
+  alignItems: 'center',
+},
+flatListSelectorContent: {
+  alignItems: 'center',
+  paddingHorizontal: (LARGURA_DISPONIVEL - 40 * 2 - 10 * 2 - LARGURA_ITEM_SELECTOR) / 2,
+},
+itemContainer: {
+  width: LARGURA_ITEM_SELECTOR,
+  height: 40,
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginHorizontal: 5,
+},
+itemText: {
+  fontFamily: 'Creato-Bold',
+  color: '#666',
+  fontSize: 18,
+  textTransform: 'uppercase',
+},
+activeItemContainer: {
+  width: LARGURA_ITEM_SELECTOR,
+  height: 40,
+  justifyContent: 'center',
+  alignItems: 'center',
+  borderRadius: 12,
+  marginHorizontal: 5,
+},
+activeItemText: {
+  fontFamily: 'Creato-Bold',
+  color: '#FFF',
+  fontSize: 18,
+  textTransform: 'uppercase',
+  letterSpacing: 1,
+},
 });
